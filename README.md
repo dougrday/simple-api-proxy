@@ -33,9 +33,9 @@ Note the `--` option is present to correctly pass parameters to the node script.
 
 For more complex options, the following parameters are available:
 
-`--path=/local/path/to/forward/to/api/*` - Defaults to `/*` to forward all calls.
-`--proxy=http://path/to/api` - Required, the path to the web API that you're proxying.
-`--port=3002` - Defaults to 3002, the port assigned to the proxy.
+`--path=/local/path/to/forward/to/api/*` - Defaults to `/*` to forward all calls.  
+`--proxy=http://path/to/api` - Required, the path to the web API that you're proxying.  
+`--port=3002` - Defaults to 3002, the port assigned to the proxy.  
 
 ## For example:
 
