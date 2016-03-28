@@ -3,7 +3,9 @@
 This is a simple web API proxy, which can be used to forward API calls from one URI to another,
 through the node Express web server.  I've used this in personal projects to avoid issues with
 [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS), especially in
-proof-of-concept designs or quickstarters.
+proof-of-concept designs or quickstarters:
+
+![alt tag](docs/img/cors.png)
 
 # Prerequisites
 
@@ -25,8 +27,9 @@ For more complex options, the following parameters are available:
 `--proxy=http://path/to/api` - Required, the path to the web API that you're proxying.
 `--port=3002` - Defaults to 3002, the port assigned to the proxy.
 
-For example:
+## For example:
 
-Run `npm start -- --proxy=http://mywebsite.com/api --port=60001 --path=/api/*` would:
-1. Start the proxy server at port 60001.
-2. Forward all calls starting with http://localhost:60001/api to http://mywebsite.com/api.
+Running `npm start -- --proxy=http://mywebsite.com/api --port=60001 --path=/api/*` would:
+
+1.  Start the proxy server at port 60001.
+2.  Forward all calls starting with http://localhost:60001/api to http://mywebsite.com/api.
