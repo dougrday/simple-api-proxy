@@ -10,11 +10,20 @@ If you see this error in Chrome, this project may help you:
 
 # Prerequisites
 
-Ensure Node v5 or later is installed.  See [nodejs.org](https://nodejs.org/en/).
+Ensure Node is installed.  See [nodejs.org](https://nodejs.org/en/).
+
+# Download
+
+Download this project.  The easiest way is to click the "Download Zip" button above:
+![alt tag](docs/img/download.png)
+
+Once downloaded, unzip the project.
 
 # Installation
 
-Run `npm install`
+Open a command prompt and navigate to the folder where the project was unzipped.
+
+Then, run `npm install`
 
 # Running the proxy server
 
