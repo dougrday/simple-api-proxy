@@ -15,4 +15,18 @@ Run `npm install`
 
 # Running the proxy server
 
-Run `npm start --proxy=http://path/to/api`
+Run `npm start -- --proxy=http://path/to/api`
+
+Note the `--` option is present to correctly pass parameters to the node script.
+
+For more complex options, the following parameters are available:
+
+`--path=/local/path/to/forward/to/api/*` - Defaults to `/*` to forward all calls.
+`--proxy=http://path/to/api` - Required, the path to the web API that you're proxying.
+`--port=3002` - Defaults to 3002, the port assigned to the proxy.
+
+For example:
+
+Run `npm start -- --proxy=http://mywebsite.com/api --port=60001 --path=/api/*` would:
+1. Start the proxy server at port 60001.
+2. Forward all calls starting with http://localhost:60001/api to http://mywebsite.com/api.
