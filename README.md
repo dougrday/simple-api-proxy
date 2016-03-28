@@ -3,8 +3,9 @@
 This is a simple web API proxy, which can be used to forward API calls from one URI to another,
 through the node Express web server.  I've used this in personal projects to avoid issues with
 [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS), especially in
-proof-of-concept designs or quickstarters:
+proof-of-concept designs or quickstarters.
 
+If you see this error in Chrome, this project may help you:
 ![alt tag](docs/img/cors.png)
 
 # Prerequisites
