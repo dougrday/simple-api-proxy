@@ -48,9 +48,11 @@ Running `npm start -- --proxy=http://mywebsite.com/api --port=60001 --path=/api/
 
 Once the proxy is running, you can direct all calls to it rather than another server.
 
-For example, if you were originally issuing a GET request to http://some/other/api/customers
+For example, if you were originally issuing a `GET` request to `http://some/other/api/customers`
 to get a list of customers, you would first run a server like this:
 
 `npm start -- --proxy=http://some/other/web/api`
 
-Then, you can issue a GET request to http://localhost:3002/customers.
+Then, you can issue a `GET` request to `http://localhost:3002/customers`, and the API call
+will be passed through the server to `http://some/other/api/customers` and return a
+CORS-enabled response.
